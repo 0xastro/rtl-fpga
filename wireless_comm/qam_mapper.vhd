@@ -1,4 +1,3 @@
--- To be built
 ---------------------------------------------------------
 -- QAM MAPPER
 ---------------------------------------------------------
@@ -29,21 +28,29 @@ ARCHITECTURE Behaviourl of qam_mapper is
 	-- Constellation Size; to be generic however the modulation order
 	constant const_size : integer := 4
 	-- Constellation Type
-	type constellation is array (0 to 3) of signed (1 downto 0);
+	type constellation is array (0 to const_size-1) of signed (1 downto 0);
 	-- I array
 	-- to_signed: Converts an INTEGER to a SIGNED vector of the specified SIZE.
 	constant I_data	: constellation := (
-		to_signed(1,2);
-		to_signed(-1,2);
-		to_signed(1,2);
+		to_signed(1,2),
+		to_signed(-1,2),
+		to_signed(1,2),
 		to_signed(-1,2)
 		);
 	-- Q array
 	constant Q_data	: constellation := (
-		to_signed(1,2);
-		to_signed(1,2);
-		to_signed(-1,2);
+		to_signed(1,2),
+		to_signed(1,2),
+		to_signed(-1,2),
 		to_signed(-1,2)
-		);
+		); 
+	signal bits_in_unsigned : unsigned (1 downto 0);
+begin
+	-- to get from std_logic_vector to integer: > we go to unsigned then to integer 
+	-- s.t input data is needed to index the constellation array
+	bits_in_unsigned 	<= unsigned(data_in);
+	-- Mapping of Input Data/Bits into QAM symbols
+	I_symbols 		<= std_logic_vector(I_data(to_integer(bits_in_unsigned)));
+	Q_symbols 		<= std_logic_vector(Q_data(to_integer(bits_in_unsigned)));
 
 end Behaviourl;
