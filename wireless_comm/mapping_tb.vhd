@@ -11,7 +11,7 @@ ARCHITECTURE Behavioral of mapping_tb is
 	--Define a signal called clk
 	signal clk : std_logic;
 	signal rst : std_logic;
-	signal twobitcount : unsigned(1 down to 0);
+	signal twobitcount : unsigned(1 downto 0);
 	signal tx_bits : std_logic_vector(1 downto 0); 
 
 begin
@@ -57,7 +57,7 @@ begin
 	
 	-- create a label qam_mapper_i to qam_mapper
 	-- qam_mapper the developed module, which is in the work library (default lib)
-	qam_mapper_i entity work.qam_mapper
+	qam_mapper_i : entity work.qam_mapper
 		-- mapping to signals 
 		port map (
 			data_in		=> tx_bits,
@@ -65,4 +65,4 @@ begin
 			Q_symbols	=> open
 		);
 
-end Behavioral
+end Behavioral;
