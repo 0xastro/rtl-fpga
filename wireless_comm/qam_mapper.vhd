@@ -26,7 +26,7 @@ END qam_mapper;
 ARCHITECTURE Behaviourl of qam_mapper is
 	-- define array for both I and Q parts (4 constellation points)
 	-- Constellation Size; to be generic however the modulation order
-	constant const_size : integer := 4
+	constant const_size : integer := 4;
 	-- Constellation Type
 	type constellation is array (0 to const_size-1) of signed (1 downto 0);
 	-- I array
