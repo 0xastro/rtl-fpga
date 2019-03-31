@@ -31,6 +31,7 @@ ARCHITECTURE Behaviourl of qam_mapper is
 	-- Constellation Type
 	type constellation is array (0 to 3) of signed (1 downto 0);
 	-- I array
+	-- to_signed: Converts an INTEGER to a SIGNED vector of the specified SIZE.
 	constant I_data	: constellation := (
 		to_signed(1,2);
 		to_signed(-1,2);
