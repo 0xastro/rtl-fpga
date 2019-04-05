@@ -36,4 +36,4 @@ architecture Struct of  HalfAdder is -- architecture name
 			port map (a, b, s); -- positional association 
 			--HINT: positional association strongly discouraged
 	end Struct;
-	```
+```
