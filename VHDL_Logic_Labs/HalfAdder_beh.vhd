@@ -6,12 +6,10 @@ use ieee.std_logic_1164.ALL;
 -------------------------------
 entity HalfAdder is
 	port (
-		i_a	: in	std_logic;
-		i_b	: in	std_logic;	
-		o_sum	: out	std_logic;
-		o_carry	: out	std_logic
-		);
+		i_a, i_b	: in	std_logic;
+		o_sum, o_carry	: out	std_logic);
 end HalfAdder;
+
 
 architecture Beh of HalfAdder is -- architecture name
 	begin
