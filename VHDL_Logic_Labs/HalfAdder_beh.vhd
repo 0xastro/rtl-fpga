@@ -1,4 +1,5 @@
-```VHDL
+library ieee;
+use ieee.std_logic_1164.ALL;
 -------------------------------
 -- HalfAdder Implementation
 -- Testbench is Included under the name HalfAdder_beh_tb
@@ -25,4 +26,3 @@ architecture Beh of HalfAdder is -- architecture name
 		s <= a xor b;
 end Beh;
   
-```
