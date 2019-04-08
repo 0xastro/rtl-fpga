@@ -36,3 +36,21 @@ docker run -it -e DISPLAY=host.docker.internal:0 hdl_fpga
 <p align="center">
   <img src="https://github.com/astro7x/FPGA_Playground/blob/master/qam.png"/>
 </p>
+
+- compile and simulate the design with GHDL
+```sh
+ghdl -a some_design.vhd testbench.vhd
+```
+- build an executable for the testbench.
+```sh
+ghdl -e testbench_entity_name
+```
+- sink the waveform to a file.
+```sh
+ghdl -r testbench_entity_name --vcd=file_name.vcd 
+```
+
+- simulate the waveforms using GTKWave
+```sh
+ gtkwave file_name.vcd
+```
