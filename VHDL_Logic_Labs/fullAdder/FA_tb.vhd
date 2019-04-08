@@ -7,13 +7,13 @@ use ieee.std_logic_1164.ALL;
 ---------------------------------------------------------------------------------------------
 -- FullAdder TESTBENCH Implementation
 ---------------------------------------------------------------------------------------------
-entity FA is
-end FA;
+entity FA_tb is
+end FA_tb;
 
 ---------------------------------------------------------------------------------------------
 -- Architecture for 1 bit Full Adder
 ---------------------------------------------------------------------------------------------
-architecture data_flow of FA is 
+architecture data_flow of FA_tb is
 
   -- Define a Component of DUT(Design Under Test);
   component FA
@@ -29,19 +29,19 @@ architecture data_flow of FA is
   signal cin  : std_logic := '0';
 
   -- Output
-  signal s    : std_logic;
-  signal cout : std_logic;
+   signal s    : std_logic;
+   signal cout : std_logic;
 
 
 begin
   --Instantiate (DUT)
   dut: FA port map (
-    A =>A,
-    B =>B,
-    cin=>cin,
-    s =>s,
-    cout=>cout);
-  
+    A     => A,
+    B     => B,
+    cin   =>cin,
+    s     =>s,
+    cout  =>cout);
+
     -- Stimulus process
   stim_proc: process
   begin
@@ -51,38 +51,38 @@ begin
     A <= '1';
     B <= '0';
     cin <= '0';
-    wait for 10 ns;
+    wait for 100 ns;
 
     A <= '0';
     B <= '1';
     cin <= '0';
-    wait for 10 ns;
+    wait for 100 ns;
 
     A <= '1';
     B <= '1';
     cin <= '0';
-    wait for 10 ns;
+    wait for 100 ns;
 
     A <= '0';
     B <= '0';
     cin <= '1';
-    wait for 10 ns;
+    wait for 100 ns;
 
     A <= '1';
     B <= '0';
     cin <= '1';
-    wait for 10 ns;
+    wait for 100 ns;
 
     A <= '0';
     B <= '1';
     cin <= '1';
-    wait for 10 ns;
+    wait for 100 ns;
 
     A <= '1';
     B <= '1';
     cin <= '1';
-    wait for 10 ns;
+    wait for 100 ns;
 
   end process stim_proc;
-      
+
 end data_flow;
