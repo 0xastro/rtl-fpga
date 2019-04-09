@@ -5,7 +5,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity DFF is
+entity DFF_N is
   generic( N : integer :=8);
   port(
   D           : in std_logic_vector(N-1 downto 0);
