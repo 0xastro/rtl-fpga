@@ -21,7 +21,7 @@ architecture beh of DFF_tb is
   end component DFF;
 
   signal clk           : std_logic := '0';
-  signal reset         : std_logic := '1';
+  signal rst           : std_logic := '1';
   signal D             : std_logic := '0';
   signal Q             : std_logic;
   constant clk_period  : time := 100 ns;
