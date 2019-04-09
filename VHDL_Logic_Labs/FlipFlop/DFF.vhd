@@ -5,9 +5,10 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity DFF is
-  D, clk, rst   : in std_logic;
-  Q             : out std_logic);
+entity DFF is 
+  port(
+    D, clk, rst   : in std_logic;
+    Q             : out std_logic);
 end DFF;
 
 --------------------------------------------------------------------------------
@@ -17,14 +18,14 @@ architecture beh of dff is
 begin
   -- Here, the process is sensitive to the RST and CLK signals,
   -- Asynchronous reset
-  dff: process(clk,rst)
+  i_dff: process(clk,rst)
   begin
     if rst='1' then
       Q <= '0';
     elsif (clk='1' and clk'event) then -- for the rising edge trigger the output
       Q <= D;
     end if;
-  end process dff;
+  end process i_dff;
 
 end beh;
 
