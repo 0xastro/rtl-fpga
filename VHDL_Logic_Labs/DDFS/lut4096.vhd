@@ -35,9 +35,16 @@ constant ddfs_lut : LUT_T := ( 00000,
 -- lookup table index/address (unsinged int)
 -- Converting the lut address into an integer to be usable as array index
 -- lut_address_index defined as signals 
+
+-- It's not recommended to do it in one step; since the simulator may miss behave in Range
+-- Checking for the integer
 lut_address_index <= ddfs_lut (to_integer(unsigned(address)));
-   
 -- Selecting the lut cell depending on the index lut_address_index
-dds_out <= std_logic_vector(to_unsigned(lut(lut_address_index),6));
-    
+dds_out <= std_logic_vector(to_unsigned(ddfs_lut(lut_address_index),6));
+
+
+-- so It's better/more safe to do the casting in two steps
+lut_address_index <= to_integer(address);
+dds_out <= ddfs_lut(lut_address_index);
+
 end beh;
