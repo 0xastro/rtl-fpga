@@ -1,0 +1,16 @@
+v 4
+file . "counter_tb.vhd" "19d89668981b6b55f1638ccccf73840e6fa62c89" "20190428141350.296":
+  entity counter_tb at 1( 0) + 0 on 19;
+  architecture struct of counter_tb at 14( 404) + 0 on 20;
+file . "counter.vhd" "aba8b8e9384e0a1290a9317180e7e97a518b460f" "20190428141350.295":
+  entity counter at 1( 0) + 0 on 17;
+  architecture struct of counter at 31( 1097) + 0 on 18;
+file . "RCA_N.vhd" "29c1f308d8ec523d13f853a72339fe3ddb87afc4" "20190428141350.293":
+  entity rca_n at 5( 213) + 0 on 15;
+  architecture structure of rca_n at 18( 532) + 0 on 16;
+file . "FA.vhd" "1f17a0a2fbc5f4ea966e6ead3ba30149d327b907" "20190428141350.293":
+  entity fa at 1( 0) + 0 on 13;
+  architecture structure of fa at 17( 629) + 0 on 14;
+file . "DFF_N.vhd" "60adfed2cd8d06a2f026bdfb8457cde14b6bed5c" "20190428141350.292":
+  entity dff_n at 5( 186) + 0 on 11;
+  architecture struct of dff_n at 22( 704) + 0 on 12;

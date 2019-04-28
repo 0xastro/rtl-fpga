@@ -1,0 +1,408 @@
+$date
+  Sun Apr 28 16:14:12 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module counter_tb $end
+$var reg 1 ! clk_tb $end
+$var reg 1 " rst_tb $end
+$var reg 3 # d_tb[2:0] $end
+$var reg 3 $ q_tb[2:0] $end
+$var reg 1 % en_tb $end
+$var reg 1 & end_sim $end
+$scope module counter_map $end
+$var reg 3 ' d[2:0] $end
+$var reg 3 ( q[2:0] $end
+$var reg 1 ) clk $end
+$var reg 1 * rst $end
+$var reg 1 + en $end
+$var reg 3 , dff_out[2:0] $end
+$var reg 3 - fa_out[2:0] $end
+$scope module rca_n_map $end
+$var reg 3 . a[2:0] $end
+$var reg 3 / b[2:0] $end
+$var reg 1 0 cin $end
+$var reg 3 1 s[2:0] $end
+$var reg 1 2 cout $end
+$var reg 4 3 c[3:0] $end
+$scope module rca_n_proc(0) $end
+$scope module fa_i $end
+$var reg 1 4 a $end
+$var reg 1 5 b $end
+$var reg 1 6 cin $end
+$var reg 1 7 s $end
+$var reg 1 8 cout $end
+$upscope $end
+$upscope $end
+$scope module rca_n_proc(1) $end
+$scope module fa_i $end
+$var reg 1 9 a $end
+$var reg 1 : b $end
+$var reg 1 ; cin $end
+$var reg 1 < s $end
+$var reg 1 = cout $end
+$upscope $end
+$upscope $end
+$scope module rca_n_proc(2) $end
+$scope module fa_i $end
+$var reg 1 > a $end
+$var reg 1 ? b $end
+$var reg 1 @ cin $end
+$var reg 1 A s $end
+$var reg 1 B cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module dff_n_map $end
+$var reg 3 C d[2:0] $end
+$var reg 1 D clk $end
+$var reg 1 E rst $end
+$var reg 1 F en $end
+$var reg 3 G q[2:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+b000 #
+bUUU $
+1%
+1&
+b000 '
+b000 (
+0)
+0*
+1+
+b000 ,
+b000 -
+b000 .
+b000 /
+00
+b000 1
+U2
+bU000 3
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+b000 C
+0D
+0E
+1F
+b000 G
+#5000000
+1!
+1)
+1D
+#10000000
+0!
+0)
+0D
+#15000000
+1!
+1)
+1D
+#20000000
+0!
+0)
+0D
+#25000000
+1!
+1"
+1)
+1*
+1D
+1E
+#30000000
+0!
+0)
+0D
+#35000000
+1!
+b001 #
+b001 '
+1)
+b001 -
+b001 .
+b001 1
+14
+17
+b001 C
+1D
+#40000000
+0!
+0)
+0D
+#45000000
+1!
+b001 (
+1)
+b001 ,
+b000 -
+b001 /
+b000 1
+bU001 3
+15
+07
+18
+b000 C
+1D
+b001 G
+#50000000
+0!
+0)
+0D
+#55000000
+1!
+b000 (
+1)
+b000 ,
+b001 -
+b000 /
+b001 1
+bU000 3
+05
+17
+08
+b001 C
+1D
+b000 G
+#60000000
+0!
+0)
+0D
+#65000000
+1!
+b001 (
+1)
+b001 ,
+b000 -
+b001 /
+b000 1
+bU001 3
+15
+07
+18
+b000 C
+1D
+b001 G
+#70000000
+0!
+0)
+0D
+#75000000
+1!
+b000 (
+1)
+b000 ,
+b001 -
+b000 /
+b001 1
+bU000 3
+05
+17
+08
+b001 C
+1D
+b000 G
+#80000000
+0!
+0)
+0D
+#85000000
+1!
+b001 (
+1)
+b001 ,
+b000 -
+b001 /
+b000 1
+bU001 3
+15
+07
+18
+b000 C
+1D
+b001 G
+#90000000
+0!
+0)
+0D
+#95000000
+1!
+b000 (
+1)
+b000 ,
+b001 -
+b000 /
+b001 1
+bU000 3
+05
+17
+08
+b001 C
+1D
+b000 G
+#100000000
+0!
+0)
+0D
+#105000000
+1!
+b010 #
+b010 '
+b001 (
+1)
+b001 ,
+b011 -
+b010 .
+b001 /
+b011 1
+04
+15
+19
+1<
+b011 C
+1D
+b001 G
+#110000000
+0!
+0)
+0D
+#115000000
+1!
+b011 (
+1)
+b011 ,
+b001 -
+b011 /
+b001 1
+bU010 3
+1:
+0<
+1=
+b001 C
+1D
+b011 G
+#120000000
+0!
+0)
+0D
+#125000000
+1!
+b001 (
+1)
+b001 ,
+b011 -
+b001 /
+b011 1
+bU000 3
+0:
+1<
+0=
+b011 C
+1D
+b001 G
+#130000000
+0!
+0)
+0D
+#135000000
+1!
+b011 (
+1)
+b011 ,
+b001 -
+b011 /
+b001 1
+bU010 3
+1:
+0<
+1=
+b001 C
+1D
+b011 G
+#140000000
+0!
+0)
+0D
+#145000000
+1!
+b001 (
+1)
+b001 ,
+b011 -
+b001 /
+b011 1
+bU000 3
+0:
+1<
+0=
+b011 C
+1D
+b001 G
+#150000000
+0!
+0)
+0D
+#155000000
+1!
+b011 (
+1)
+b011 ,
+b001 -
+b011 /
+b001 1
+bU010 3
+1:
+0<
+1=
+b001 C
+1D
+b011 G
+#160000000
+0!
+0)
+0D
+#165000000
+1!
+0&
+b001 (
+1)
+b001 ,
+b011 -
+b001 /
+b011 1
+bU000 3
+0:
+1<
+0=
+b011 C
+1D
+b001 G
+#170000000
+0!
+0)
+0D
+#175000000

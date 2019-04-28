@@ -1,0 +1,4 @@
+v 4
+file . "nco8.vhd" "4337d7fa0c181c576dded6ac006d8fb468f10139" "20190421181226.091":
+  entity nco8 at 1( 0) + 0 on 11;
+  architecture rtl of nco8 at 14( 377) + 0 on 12;

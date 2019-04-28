@@ -1,0 +1,35 @@
+$date
+  Sun Apr 21 20:13:16 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module nco8 $end
+$var reg 1 ! i_clk $end
+$var reg 1 " i_rstb $end
+$var reg 1 # i_sync_reset $end
+$var reg 8 $ i_fcw[7:0] $end
+$var reg 8 % o_nco[7:0] $end
+$var reg 1 & r_sync_reset $end
+$var reg 8 ' r_fcw[7:0] $end
+$var reg 8 ( r_nco[7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+U!
+U"
+U#
+bUUUUUUUU $
+bUUUUUUUU %
+U&
+bUUUUUUUU '
+bUUUUUUUU (

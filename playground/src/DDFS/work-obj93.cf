@@ -1,0 +1,7 @@
+v 4
+file . "ddfs_lut_1024.vhd" "0a6e5fdff4005138f511c8688a8e4bae842f2199" "20190421190530.053":
+  entity ddfs_lut_1024 at 1( 0) + 0 on 13;
+  architecture bhv of ddfs_lut_1024 at 17( 308) + 0 on 14;
+file . "DDFS_tb.vhd" "7e5ad34f81d77066520c84dcb8181bec632e89ec" "20190421190530.051":
+  entity ddfs_tb at 1( 0) + 0 on 11;
+  architecture testbench of ddfs_tb at 10( 136) + 3 on 12;

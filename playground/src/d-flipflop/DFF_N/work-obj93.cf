@@ -1,0 +1,7 @@
+v 4
+file . "DFF_N_tb.vhd" "4f307c7ace6c138e21c208150c954b08ad9867c4" "20190428134513.679":
+  entity dff_n_tb at 5( 194) + 0 on 13;
+  architecture beh of dff_n_tb at 15( 487) + 0 on 14;
+file . "DFF_N.vhd" "60adfed2cd8d06a2f026bdfb8457cde14b6bed5c" "20190428134513.675":
+  entity dff_n at 5( 186) + 0 on 11;
+  architecture struct of dff_n at 22( 704) + 0 on 12;
