@@ -15,12 +15,11 @@ use IEEE.NUMERIC_STD.ALL;
 
 ENTITY qam_mapper is
 	port (
-		data_in		: in std_logic_vectror (1 downto 0);
+		data_in		: in std_logic_vector (1 downto 0);
 		I_symbols	: out std_logic_vector (1 downto 0);
 		Q_symbols	: out std_logic_vector (1 downto 0)
 	);
 	
-
 END qam_mapper;
 
 ARCHITECTURE Behaviourl of qam_mapper is

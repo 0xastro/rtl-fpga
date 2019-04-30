@@ -6,13 +6,24 @@ ENTITY mapping_tb is
 END mapping_tb;
 
 ARCHITECTURE Behavioral of mapping_tb is
+
 	--Define the clock as 100 MHz
-	constant clk_period : time :=10ns;
+	constant clk_period : time :=10 ns;
 	--Define a signal called clk
 	signal clk : std_logic;
 	signal rst : std_logic;
 	signal twobitcount : unsigned(1 downto 0);
 	signal tx_bits : std_logic_vector(1 downto 0); 
+
+
+component qam_mapper is
+        port (
+                data_in         : in std_logic_vector (1 downto 0);
+                I_symbols       : out std_logic_vector (1 downto 0);
+                Q_symbols       : out std_logic_vector (1 downto 0)
+        );
+end component;
+
 
 begin
 -----------------------------------------------------------------------
@@ -57,7 +68,7 @@ begin
 	
 	-- create a label qam_mapper_i to qam_mapper
 	-- qam_mapper the developed module, which is in the work library (default lib)
-	qam_mapper_i : entity work.qam_mapper
+	qam_mapper_i :  qam_mapper
 		-- mapping to signals 
 		port map (
 			data_in		=> tx_bits,
